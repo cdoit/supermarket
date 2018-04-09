@@ -21,7 +21,7 @@ function getopenid(req, res, next) {
 }
 
 module.exports = function (app) {
-    db.initwx();
+    db.initvillamarket();
 
     app.get('/wx', function (req, res) {
         wechatApp.auth(req, res);
